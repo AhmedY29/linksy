@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FavIcon -->
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/?size=100&id=21000&format=png&color=000000"
+      type="image/x-icon"
+    />
+    <!-- == FavIcon == -->
+    <!--  Bootstrap  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <!-- == Bootstrap == -->
+    <!-- Style.css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- == Style.css == -->
+    <title>Linksy - Register</title>
+  </head>
+  <body style="margin: 0; padding: 0">
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="https://img.icons8.com/?size=100&id=21000&format=png&color=000000"
+            width="40"
+            alt="logo-img"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Notifications
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Likes</a></li>
+                <li><a class="dropdown-item" href="#">Comments</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Private</a>
+            </li>
+          </ul>
+          <div id="nav-btns" class="btns d-none gap-3">
+            <a class="btn btn-primary" href="./login.html">Login</a>
+            <a class="btn btn-outline-primary" href="./register.html"
+              >Register</a
+            >
+          </div>
+
+          <div id="welcomeMsg" class="dropdown-account d-none me-5">
+            <li style="list-style: none" class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                id="welcome-name"
+              >
+                Welcome Message
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a id="logout-btn" class="dropdown-item" href="#">Logout</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- == NavBar == -->
+    <div
+      style="height: calc(100vh - 100px)"
+      class="d-flex justify-content-center align-items-center"
+    >
+      <form
+        style="background-color: white; width: 25rem"
+        class="shadow p-5 rounded-2"
+        id="register-form"
+      >
+        <div class="title text-center text-primary mb-4">
+          <h1>Register</h1>
+        </div>
+        <div class="mb-3">
+          <label for="username-input" class="form-label">User Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="username-input"
+            required
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="email-input" class="form-label">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email-input"
+            required
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="password-input" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password-input"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="confirm-password-input" class="form-label"
+            >Confirm Password</label
+          >
+          <input
+            type="password"
+            class="form-control"
+            id="confirm-password-input"
+            required
+          />
+        </div>
+        <div class="mb-3 form-check">
+          <input
+            required
+            type="checkbox"
+            class="form-check-input"
+            id="agreement"
+          />
+          <label class="form-check-label" for="agreement">I agree </label>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Register</button>
+      </form>
+    </div>
+    <!-- Script -->
+    <script src="registerLogic.js"></script>
+    <!-- == Script == -->
+    <!-- Bootstrap Script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+    <!-- == Bootstrap Script == -->
+  </body>
+</html>
