@@ -143,7 +143,11 @@ addPostBtn.addEventListener("click", async () => {
     return;
   }
 
-  if (!postText.value.trim() && !postImgUrl.value.trim()) {
+  if (!postText.value.trim()) {
+    alert("Please Fill Filed");
+    return;
+  }
+  if (!postImgUrl.value.trim()) {
     alert("Please Fill Filed");
     return;
   }
