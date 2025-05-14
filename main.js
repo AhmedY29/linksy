@@ -342,6 +342,7 @@ addCommentBtn.addEventListener("click", async () => {
   }
   commentInput.value = "";
   handleCommentsData(editPostId);
+  handleShowPosts();
 });
 
 function getEditElements(postId, comments) {
