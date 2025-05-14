@@ -23,7 +23,7 @@ loginForm.addEventListener("submit", async (e) => {
       user.email == emailLogInput.value && user.password == passLogInput.value
   );
   if (userExist) {
-    localStorage.setItem("user", userExist.username);
+    localStorage.setItem("accountName", userExist.username);
     alert("Login Successfully, Press Ok to Redirect You To Home Page");
     window.location.href = "./index.html";
   } else {

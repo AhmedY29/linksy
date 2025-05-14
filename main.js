@@ -24,7 +24,7 @@ logoutBtn.addEventListener("click", () => {
 });
 
 function getNameFromLocalStorage() {
-  let username = localStorage.getItem("user");
+  let username = localStorage.getItem("accountName");
 
   if (username) {
     navBtns.className = "d-none";
@@ -136,7 +136,7 @@ let postImgUrl = document.getElementById("post-img-url");
 let addPostBtn = document.getElementById("add-btn-post");
 
 addPostBtn.addEventListener("click", async () => {
-  let username = localStorage.getItem("user");
+  let username = localStorage.getItem("accountName");
 
   if (!username) {
     alert("You have to Login to Add Post");
@@ -187,7 +187,7 @@ async function handleAddPost(post) {
 let deletePostBtn = document.getElementById("delete-post-btn");
 
 async function handleDeleteBtn(id) {
-  let username = localStorage.getItem("user");
+  let username = localStorage.getItem("accountName");
 
   if (!username) {
     return;
@@ -256,7 +256,7 @@ cancelCommentBtn.addEventListener("click", () => {
 function handleShowComments(comments, postId) {
   let commentsContainer = document.getElementById("comments-section");
 
-  let username = localStorage.getItem("user");
+  let username = localStorage.getItem("accountName");
   console.log(postId);
   if (comments.length <= 0) {
     commentsContainer.innerHTML = `<div class="comment">
@@ -311,7 +311,7 @@ let editComments = [];
 
 addCommentBtn.addEventListener("click", async () => {
   let commentInput = document.getElementById("comment-text");
-  let username = localStorage.getItem("user");
+  let username = localStorage.getItem("accountName");
   console.log(editPostId, editComments);
   if (!username) {
     alert("You have to Login to add Comment");
